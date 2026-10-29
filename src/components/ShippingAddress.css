@@ -1,0 +1,393 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.shipping-page{
+    width:100%;
+    min-height:100vh;
+    background:#f5f5f5;
+    padding:20px 30px;
+}
+
+/* STEP BAR */
+
+.checkout-steps{
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    margin-bottom:40px;
+    margin-top:20px;
+}
+
+.step-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-width:180px;
+}
+
+.step-circle{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#d9d9d9;
+    color:#000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    font-weight:600;
+}
+
+.step-item.active .step-circle{
+    background:#0ea56b;
+    color:white;
+}
+
+.step-item p{
+    margin-top:12px;
+    font-size:18px;
+    text-align:center;
+}
+
+.step-line{
+    width:250px;
+    height:5px;
+    background:#d9d9d9;
+    margin-top:18px;
+}
+
+.step-line.active{
+    background:#0ea56b;
+}
+
+/* FORM */
+
+.shipping-content{
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+
+.shipping-form{
+    width:500px;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 0 12px rgba(0,0,0,0.08);
+}
+
+.shipping-form h1{
+    text-align:center;
+    font-size:38px;
+    font-weight:500;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.form-group input{
+    width:100%;
+    height:48px;
+    border:2px solid #888;
+    border-radius:5px;
+    outline:none;
+    padding:0 12px;
+    font-size:16px;
+}
+
+/* BUTTONS */
+
+.next-btn{
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:8px;
+    background:#15998d;
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.next-btn:hover{
+    background:#222;
+}
+
+.back-btn{
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:8px;
+    background:#eaeaea;
+    color:#000;
+    font-size:24px;
+    cursor:pointer;
+    margin-top:12px;
+}
+
+/* PAYMENT */
+
+.payment-form{
+    width:420px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.08);
+}
+
+.payment-form h2{
+    margin-bottom:25px;
+}
+
+.payment-option{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.payment-option input{
+    width:25px;
+    height:25px;
+}
+
+/* POLICY */
+
+.place-order-box{
+    width:900px;
+    margin:40px auto;
+    background:#ffffff;
+    padding:25px 30px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.place-order-box h2{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.place-order-box p{
+    font-size:14px;
+    margin:6px 0;
+}
+
+/* ORDER PAGE */
+
+.place-order-container{
+    width:100%;
+    display:flex;
+    gap:35px;
+    align-items:flex-start;
+}
+
+.left-section{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.summary-card{
+    background:#e8e8e8;
+    border-radius:16px;
+    padding:30px;
+    margin-bottom:20px;
+    position:relative;
+    width:100%;
+}
+
+.summary-card h2{
+    margin-bottom:20px;
+}
+
+.summary-card p{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+
+
+.order-summary{
+    width:350px;
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    position:sticky;
+    top:100px;
+}
+
+.order-summary h2{
+    text-align:center;
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.price-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.place-order-btn{
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:8px;
+    background:#15998d;
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+}
+.car-image{
+    width:100px;
+    height:auto;
+    object-fit:contain;
+}
+
+.color-badge{
+    background:#fff;
+    padding:10px 18px;
+    border-radius:20px;
+    display:inline-block;
+}
+
+/* CAR TABLE */
+
+.car-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.car-table th{
+    padding:18px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.car-table td{
+    padding:22px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+.car-image{
+    width:90px;
+    height:auto;
+}
+
+.color-badge{
+    background:#fff;
+    padding:10px 18px;
+    border-radius:20px;
+    display:inline-block;
+}
+
+.car-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+}
+
+.car-table th{
+    text-align:center;
+    padding:18px;
+    font-size:16px;
+    border-bottom:1px solid #ddd;
+}
+
+.car-table td{
+    text-align:center;
+    padding:25px 15px;
+    border-bottom:1px solid #eee;
+}
+
+.order-summary{
+    width:340px;
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    position:sticky;
+    top:100px;
+}
+
+.price-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.price-row span:last-child{
+    color:#008080;
+    font-weight:700;
+    font-size:28px;
+}
+
+.place-order-btn{
+    width:100%;
+    height:55px;
+    background:#15998d;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .checkout-steps{
+        overflow-x:auto;
+        justify-content:flex-start;
+    }
+
+    .shipping-form{
+        width:95%;
+        padding:20px;
+    }
+
+    .shipping-form h1{
+        font-size:30px;
+    }
+
+    .step-line{
+        width:100px;
+    }
+
+    .place-order-container{
+        flex-direction:column;
+    }
+
+    .order-summary{
+        width:100%;
+        position:static;
+    }
+
+    .edit-btn{
+        position:static;
+        margin-top:15px;
+    }
+}

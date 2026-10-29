@@ -1,0 +1,287 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:white;
+}
+
+/* MAIN BOX */
+
+.signin-container{
+
+  width:84%;
+
+  height:640px;
+
+  margin:50px auto;
+
+  background:white;
+
+  display:flex;
+
+  border-radius:4px;
+
+  overflow:hidden;
+
+  box-shadow:0 0 10px rgba(0,0,0,0.08);
+}
+
+/* LEFT SIDE */
+
+.signin-left{
+
+  width:55%;
+
+  height:100%;
+
+  background:white;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+}
+
+.signin-left img{
+
+  width:100%;
+
+  height:100%;
+
+
+}
+
+/* RIGHT SIDE */
+
+.signin-right{
+
+  width:45%;
+
+  padding:90px 60px;
+}
+
+/* TITLE */
+
+.signin-right h1{
+
+  text-align:center;
+
+  font-size:38px;
+
+  color:#10233d;
+
+  margin-bottom:40px;
+}
+
+/* LABEL */
+
+.signin-right label{
+
+  display:block;
+
+  font-size:15px;
+
+  font-weight:600;
+
+  margin-bottom:10px;
+
+  color:#111;
+}
+
+/* INPUT */
+
+.signin-right input{
+
+  width:100%;
+
+  height:52px;
+
+  border:none;
+
+  outline:none;
+
+  background:#fff;
+
+  border-radius:10px;
+
+  padding:0 18px;
+
+  font-size:15px;
+
+  margin-bottom:22px;
+
+  box-shadow:0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* SIGN IN BUTTON */
+
+.signin-submit{
+
+  width:100%;
+
+  height:50px;
+
+  border:none;
+
+  background:#16263d;
+
+  color:white;
+
+  font-size:18px;
+
+  font-weight:600;
+
+  border-radius:5px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.signin-submit:hover{
+
+  background:#00c853;
+
+  color:black;
+}
+
+/* FORGOT PASSWORD */
+
+.forgot-password{
+
+  display:flex;
+
+  justify-content:flex-end;
+
+  margin-top:12px;
+
+  margin-bottom:22px;
+}
+
+.forgot-password a{
+
+  text-decoration:none;
+
+  font-size:13px;
+
+  color:#2563eb;
+
+  background:#edf4ff;
+
+  padding:6px 10px;
+
+  border-radius:6px;
+
+  font-weight:600;
+}
+
+/* OR */
+
+.or{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:15px;
+
+  margin-bottom:25px;
+}
+
+.or hr{
+
+  flex:1;
+
+  border:none;
+
+  height:1px;
+
+  background:#ddd;
+}
+
+.or span{
+
+  font-size:18px;
+
+  color:#111;
+}
+
+/* GOOGLE BUTTON */
+
+.google-btn{
+
+  width:100%;
+
+  height:48px;
+
+  border:1px solid #999;
+
+  background:#16263d;
+
+  border-radius:5px;
+
+  cursor:pointer;
+
+  font-size:16px;
+
+
+  transition:0.3s;
+}
+
+.google-btn:hover{
+
+  background:#00c853;
+}
+
+/* REGISTER */
+
+.register-text{
+
+  margin-top:22px;
+
+  text-align:right;
+
+  font-size:15px;
+
+  color:#333;
+}
+
+.register-text a{
+
+  color:#2563eb;
+
+  text-decoration:none;
+
+  font-weight:600;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .signin-container{
+
+    flex-direction:column;
+
+    height:auto;
+  }
+
+  .signin-left{
+
+    width:100%;
+    height:300px;
+  }
+
+  .signin-right{
+
+    width:100%;
+
+    padding:40px 25px;
+  }
+
+}

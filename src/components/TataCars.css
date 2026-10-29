@@ -1,0 +1,262 @@
+.tata-page{
+  width:100%;
+  min-height:100vh;
+  background:#f5f5f5;
+  padding:40px 30px;
+  box-sizing:border-box;
+}
+
+/* SEARCH */
+
+.tata-search{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-bottom:40px;
+}
+
+.tata-search input{
+  width:90%;
+  padding:16px 20px;
+  border-radius:12px;
+  border:2px solid #dcdcdc;
+  font-size:18px;
+  outline:none;
+  background:white;
+}
+
+/* PAGE TITLE */
+
+.tata-title{
+  text-align:center;
+  margin-bottom:20px;
+  font-size:60px;
+  font-weight:700;
+  color:#111;
+}
+
+/* FOUND TEXT */
+
+.cars-found{
+  text-align:center;
+  font-size:22px;
+  color:#666;
+  margin-bottom:50px;
+}
+
+/* GRID */
+
+.tata-grid{
+  display:grid;
+
+  grid-template-columns:repeat(4, 1fr);
+
+  gap:30px;
+}
+
+/* CARD */
+
+.tata-card{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 4px 18px rgba(0,0,0,0.10);
+  transition:0.3s;
+
+  display:flex;
+  flex-direction:column;
+
+  height:100%;
+}
+
+.tata-card:hover{
+  transform:translateY(-8px);
+}
+
+/* IMAGE */
+
+.tata-image{
+  width:100%;
+
+  height:280px;
+
+  object-fit:cover;
+
+  background:#f3f3f3;
+
+  display:block;
+}
+
+/* INFO */
+
+.tata-info{
+  padding:22px;
+
+  display:flex;
+  flex-direction:column;
+
+  flex:1;
+}
+
+/* TITLE ROW */
+
+.tata-title-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+
+.tata-title-row h2{
+  font-size:24px;
+  margin:0;
+  font-weight:700;
+  color:#111;
+}
+
+/* NEW BADGE */
+
+.new-badge{
+  background:#b7ff8b;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+/* FUEL */
+
+.fuel-text,
+.manual-text{
+  color:#666;
+  margin:8px 0;
+  font-size:17px;
+  font-weight:500;
+}
+
+/* YEAR */
+
+.year-color{
+  display:flex;
+  gap:20px;
+  margin-top:12px;
+  color:#444;
+  font-size:16px;
+}
+
+/* BOTTOM */
+
+.tata-bottom-section{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+
+  margin-top:auto;
+
+  gap:15px;
+}
+
+/* PRICE */
+
+.starting-text{
+  margin:0;
+  font-size:18px;
+  color:#222;
+}
+
+.tata-price-text{
+  margin-top:8px;
+  font-size:34px;
+  color:teal;
+  font-weight:bold;
+}
+
+/* BUTTON */
+
+.details-btn{
+  width:110px;
+  height:45px;
+
+  background:#102347;
+  color:white;
+
+  text-decoration:none;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:12px;
+
+  font-size:18px;
+  font-weight:500;
+}
+
+.details-btn:hover{
+  background:red;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1400px){
+
+  .tata-grid{
+    grid-template-columns:repeat(3, 1fr);
+  }
+
+}
+
+@media(max-width:1000px){
+
+  .tata-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+}
+
+@media(max-width:768px){
+
+  .tata-grid{
+    grid-template-columns:1fr;
+  }
+
+  .tata-title{
+    font-size:42px;
+  }
+
+  .tata-page{
+    padding:20px;
+  }
+
+  .tata-title-row h2{
+    font-size:20px;
+  }
+
+  .tata-price-text{
+    font-size:28px;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .tata-search input{
+    width:100%;
+    font-size:16px;
+  }
+
+  .tata-image{
+    height:220px;
+    padding:15px;
+  }
+
+  .tata-bottom-section{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .details-btn{
+    width:100%;
+  }
+
+}

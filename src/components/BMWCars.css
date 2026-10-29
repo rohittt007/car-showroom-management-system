@@ -1,0 +1,254 @@
+.bmw-page{
+  width:100%;
+  min-height:100vh;
+  background:#f5f5f5;
+  padding:40px 30px;
+  box-sizing:border-box;
+}
+
+/* SEARCH */
+
+.bmw-search{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-bottom:40px;
+}
+
+.bmw-search input{
+  width:90%;
+  padding:16px 20px;
+  border-radius:12px;
+  border:2px solid #dcdcdc;
+  font-size:18px;
+  outline:none;
+  background:white;
+}
+
+/* PAGE TITLE */
+
+.bmw-title{
+  text-align:center;
+  margin-bottom:20px;
+  font-size:60px;
+  font-weight:700;
+  color:#111;
+}
+
+/* FOUND TEXT */
+
+.cars-found{
+  text-align:center;
+  font-size:22px;
+  color:#666;
+  margin-bottom:50px;
+}
+
+/* GRID */
+
+.bmw-grid{
+  display:grid;
+
+  grid-template-columns:repeat(4, 1fr);
+
+  gap:30px;
+}
+
+/* CARD */
+
+.bmw-card{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 4px 18px rgba(0,0,0,0.10);
+  transition:0.3s;
+
+  display:flex;
+  flex-direction:column;
+
+  height:100%;
+}
+
+.bmw-card:hover{
+  transform:translateY(-8px);
+}
+
+/* IMAGE */
+
+.bmw-image{
+  width:100%;
+
+  height:280px;
+
+  object-fit:cover;
+
+  background:#f3f3f3;
+
+  display:block;
+}
+
+/* INFO */
+
+.bmw-info{
+  padding:22px;
+
+  display:flex;
+  flex-direction:column;
+
+  flex:1;
+}
+
+/* TITLE ROW */
+
+.bmw-title-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+
+.bmw-title-row h2{
+  font-size:24px;
+  margin:0;
+  font-weight:700;
+  color:#111;
+}
+
+/* NEW BADGE */
+
+.new-badge{
+  background:#b7ff8b;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+/* FUEL */
+
+.fuel-text,
+.manual-text{
+  color:#666;
+  margin:8px 0;
+  font-size:17px;
+  font-weight:500;
+}
+
+/* YEAR */
+
+.year-color{
+  display:flex;
+  gap:20px;
+  margin-top:12px;
+  color:#444;
+  font-size:16px;
+}
+
+/* BOTTOM */
+
+.bmw-bottom-section{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+
+  margin-top:auto;
+
+  gap:15px;
+}
+
+/* PRICE */
+
+.starting-text{
+  margin:0;
+  font-size:18px;
+  color:#222;
+}
+
+.bmw-price-text{
+  margin-top:8px;
+  font-size:34px;
+  color:teal;
+  font-weight:bold;
+}
+
+/* BUTTON */
+
+.details-btn{
+  padding:12px 24px;
+  border:none;
+  background:#132238;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:16px;
+  transition:0.3s;
+}
+
+.details-btn:hover{
+  background:red;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1400px){
+
+  .bmw-grid{
+    grid-template-columns:repeat(3, 1fr);
+  }
+
+}
+
+@media(max-width:1000px){
+
+  .bmw-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+}
+
+@media(max-width:768px){
+
+  .bmw-grid{
+    grid-template-columns:1fr;
+  }
+
+  .bmw-title{
+    font-size:42px;
+  }
+
+  .bmw-page{
+    padding:20px;
+  }
+
+  .bmw-title-row h2{
+    font-size:20px;
+  }
+
+  .bmw-price-text{
+    font-size:28px;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .bmw-search input{
+    width:100%;
+    font-size:16px;
+  }
+
+  .bmw-image{
+    height:220px;
+    padding:15px;
+  }
+
+  .bmw-bottom-section{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .details-btn{
+    width:100%;
+  }
+
+}
